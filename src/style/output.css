@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
-    --color-fuchsia-400: oklch(74% 0.238 322.16);
     --color-white: #fff;
     --spacing: 0.25rem;
     --radius-xl: 0.75rem;
@@ -170,6 +168,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -185,20 +186,11 @@
   .h-\[80\%\] {
     height: 80%;
   }
-  .h-\[p\] {
-    height: p;
-  }
   .h-full {
     height: 100%;
   }
-  .w-\[2\] {
-    width: 2;
-  }
   .w-\[30\%\] {
     width: 30%;
-  }
-  .w-\[30\] {
-    width: 30;
   }
   .w-\[50px\] {
     width: 50px;
@@ -206,8 +198,14 @@
   .w-\[60px\] {
     width: 60px;
   }
+  .w-\[65\%\] {
+    width: 65%;
+  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[72\%\] {
+    width: 72%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -224,6 +222,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -232,6 +233,12 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -251,12 +258,6 @@
   }
   .bg-\[\#b392ff\] {
     background-color: #b392ff;
-  }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
-  }
-  .bg-fuchsia-400 {
-    background-color: var(--color-fuchsia-400);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -281,6 +282,78 @@
   .transform-3d {
     transform-style: preserve-3d;
   }
+  .\*\:text-\[15px\] {
+    :is(& > *) {
+      font-size: 15px;
+    }
+  }
+  .\*\:duration-500 {
+    :is(& > *) {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+  }
+  .\*\:hover\:text-\[\#703FFE\] {
+    :is(& > *) {
+      &:hover {
+        @media (hover: hover) {
+          color: #703FFE;
+        }
+      }
+    }
+  }
+  .lg\:order-3 {
+    @media (width >= 64rem) {
+      order: 3;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:w-\[8\%\] {
+    @media (width >= 64rem) {
+      width: 8%;
+    }
+  }
+  .lg\:w-\[15\%\] {
+    @media (width >= 64rem) {
+      width: 15%;
+    }
+  }
+  .\32 xl\:container {
+    @media (width >= 96rem) {
+      width: 100%;
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 96rem) {
+        max-width: 96rem;
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "Zen Dots";
+  src: url(../fonts/zen.ttf);
+}
+body {
+  font-family: "Zen Dots";
 }
 @layer utilities {
   .bgFav {
@@ -293,6 +366,9 @@
   }
   .lightMode {
     color: var(--color-white);
+  }
+  .zendots {
+    font-family: "Zen Dots";
   }
 }
 @property --tw-border-style {

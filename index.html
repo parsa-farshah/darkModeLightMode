@@ -6,20 +6,20 @@
     <title>Parsa</title>
     <link rel="stylesheet" href="src/style/output.css" />
   </head>
-  <body class="bg-[#070a29] lightMode">
+  <body class="bg-[#070a29] lightMode zendots">
     <!----------------------------------------- nav -------------------------------->
     <nav
-      class="flex items-center justify-between py-5 px-2 transform-3d perspective-midrange"
+      class="flex items-center justify-between py-5 px-2 transform-3d perspective-midrange 2xl:container"
     >
       <!-- logo -->
-      <div class="w-[30%]">
+      <div class="flex border justify-start w-[30%] lg:w-[15%]">
         <figure class="border flex justify-center items-center">
           <img src="src/images/imgi_1_logo-01.png" alt="logo" />
         </figure>
       </div>
 
       <!-- dark mode and light mode -->
-      <div class="w-[30%] flex justify-center border">
+      <div class="w-[30%] flex justify-center border lg:order-3 lg:w-[8%]">
         <figure
           id="drkLt"
           class="flex justify-center items-center w-[60px] h-[60px] rounded-2xl bg-[#703ffe]"
@@ -34,7 +34,7 @@
       </div>
 
       <!-- menu -->
-      <div class="w-[30%] flex justify-end border">
+      <div class="w-[30%] flex justify-end border lg:hidden">
         <div
           class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500"
         >
@@ -42,6 +42,20 @@
             <img class="w-full h-full" src="src/images/whiteMenu.png" alt="" />
           </figure>
         </div>
+      </div>
+      <!-- links -->
+      <div class="w-[65%] hidden lg:flex border">
+        <ul
+          class="flex justify-around gap-5 w-full *:hover:text-[#703FFE] *:duration-500 *:text-[15px]"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Road Map</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Explore</a></li>
+          <li><a href="">Bug List</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </div>
     </nav>
   </body>

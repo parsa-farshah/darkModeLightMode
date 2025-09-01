@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Zen Dots";
+  src: url(../fonts/zen.ttf);
+}
+
+body {
+  font-family: "Zen Dots";
+}
+
 /* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
 
 @layer utilities {
@@ -11,7 +20,10 @@
       background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
     }
   }
-  .lightMode{
-    @apply text-white
+  .lightMode {
+    @apply text-white;
+  }
+  .zendots {
+    font-family: "Zen Dots";
   }
 }
