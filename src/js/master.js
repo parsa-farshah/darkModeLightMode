@@ -34,3 +34,16 @@ inpSubExplore.addEventListener("click", () => {
   inpSubExplore.classList.toggle("after:rotate-180");
   inpSubExplore.classList.toggle("after:origin-top");
 });
+
+let inpMobMenu = document.getElementById("inpMobMenu");
+let closebtn = document.getElementById("closebtn");
+let mobMenu = document.getElementById("mobMenu");
+inpMobMenu.addEventListener("click", () => {
+  mobMenu.classList.remove("right-full");
+  mobMenu.classList.add("right-0");
+});
+
+closebtn.addEventListener("click", () => {
+  mobMenu.classList.add("right-full");
+  mobMenu.classList.remove("right-0");
+});
