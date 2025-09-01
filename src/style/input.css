@@ -26,4 +26,7 @@ body {
   .zendots {
     font-family: "Zen Dots";
   }
+  .hoverFav {
+    @apply hover:text-[#703FFE] duration-500;
+  }
 }

@@ -9,7 +9,7 @@
   <body class="bg-[#070a29] lightMode zendots">
     <!----------------------------------------- nav -------------------------------->
     <nav
-      class="flex items-center justify-between py-5 px-2 transform-3d perspective-midrange 2xl:container"
+      class="flex items-center justify-between py-5 px-4 transform-3d perspective-midrange 2xl:container mx-auto"
     >
       <!-- logo -->
       <div class="flex justify-start w-[30%] lg:w-[15%]">
@@ -106,6 +106,95 @@
         </ul>
       </div>
     </nav>
+    <!--------------------------------- mobile menu -------------------------------->
+    <section class="w-full h-fit fix bg-[#131313ab] absolute top-0 left-0">
+      <!-- close button -->
+      <div class="absolute right-4 top-6">
+        <div
+          class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500"
+        >
+          <figure class="w-[80%] h-[80%]">
+            <img class="w-full h-full" src="src/images/close.png" alt="" />
+          </figure>
+        </div>
+      </div>
+      <!-- left side menu -->
+      <div class="w-[250px] min-h-[100vh] bg-[#0a0a0a]">
+        <figure
+          class="w-full h-[80px] flex justify-start items-center border-b-1 border-b-[#3f3f3f54]"
+        >
+          <img class="pl-5" src="src/images/imgi_1_logo-01.png" alt="" />
+        </figure>
+        <ul
+          class="flex flex-col **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54]"
+        >
+          <!-- home button -->
+          <li
+            id="inpSubHome"
+            class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300"
+          >
+            <a
+              class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav"
+              href="#"
+              >Home</a
+            >
+            <ul
+              id="subHome"
+              class="flex flex-col absolute invisible opacity-0 **:py-4 **:px-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300"
+            >
+              <li>
+                <a class="hoverFav duration-500" href="#">Home 01</a>
+              </li>
+              <li>
+                <a class="hoverFav" href="#">Home 02</a>
+              </li>
+              <li>
+                <a class="hoverFav" href="#">Home 03</a>
+              </li>
+            </ul>
+          </li>
+          <li class="hoverFav">
+            <a class="px-5 w-full h-full flex py-4" href="">About</a>
+          </li>
+          <li class="hoverFav">
+            <a class="px-5 w-full h-full flex py-4" href="">Road Map</a>
+          </li>
+          <li class="hoverFav">
+            <a class="px-5 w-full h-full flex py-4" href="">Team</a>
+          </li>
+          <li
+            id="inpSubExplore"
+            class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300"
+          >
+            <a
+              class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav"
+              href="#"
+              >Explore</a
+            >
+            <ul
+              id="subExplore"
+              class="flex flex-col absolute invisible opacity-0 **:py-4 **:pl-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300"
+            >
+              <li>
+                <a class="hoverFav duration-500" href="#">vision & mission</a>
+              </li>
+              <li>
+                <a class="hoverFav" href="#">Partner & Investor</a>
+              </li>
+              <li>
+                <a class="hoverFav" href="#">Advistor & Backers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="*:hover:text-[#703FFE] *:duration-500">
+            <a class="px-5 w-full h-full flex py-4" href="">Bog List</a>
+          </li>
+          <li class="hoverFav">
+            <a class="px-5 w-full h-full flex py-4" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
   <script src="src/js/master.js"></script>
 </html>

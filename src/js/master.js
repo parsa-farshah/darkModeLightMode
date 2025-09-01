@@ -10,3 +10,27 @@ inpDrkLt.addEventListener("click", () => {
     imgDrkLt.setAttribute("src", "src/images/lightModeWhite.png");
   }
 });
+
+// home submenu
+let inpSubHome = document.getElementById("inpSubHome");
+let subHome = document.getElementById("subHome");
+
+inpSubHome.addEventListener("click", () => {
+  subHome.classList.toggle("absolute");
+  subHome.classList.toggle("invisible");
+  subHome.classList.toggle("opacity-0");
+  inpSubHome.classList.toggle("after:rotate-180");
+  inpSubHome.classList.toggle("after:origin-top");
+});
+
+// Explore submenu
+let inpSubExplore = document.getElementById("inpSubExplore");
+let subExplore = document.getElementById("subExplore");
+
+inpSubExplore.addEventListener("click", () => {
+  subExplore.classList.toggle("absolute");
+  subExplore.classList.toggle("invisible");
+  subExplore.classList.toggle("opacity-0");
+  inpSubExplore.classList.toggle("after:rotate-180");
+  inpSubExplore.classList.toggle("after:origin-top");
+});
