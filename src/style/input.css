@@ -40,6 +40,9 @@ body {
   .hoverFav {
     @apply hover:text-[#703FFE] duration-500;
   }
+  .txtFav {
+    @apply text-[#703FFE];
+  }
 }
 
 @layer components {
