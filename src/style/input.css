@@ -5,6 +5,14 @@
   src: url(../fonts/zen.ttf);
 }
 
+@font-face {
+  font-family: "Readex Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Readex Pro Regular"),
+    url("../fonts/ReadexPro[HEXP\,wght].woff") format("woff");
+}
+
 body {
   font-family: "Zen Dots";
 }
@@ -26,7 +34,28 @@ body {
   .zendots {
     font-family: "Zen Dots";
   }
+  .readex {
+    font-family: "Readex Pro Regular";
+  }
   .hoverFav {
     @apply hover:text-[#703FFE] duration-500;
+  }
+}
+
+@layer components {
+  .btnFav {
+    border-radius: 12px;
+    width: 200px;
+    height: 52px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffff;
+    background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
+    &:hover {
+      background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
+    }
   }
 }
