@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parsa</title>
     <link rel="stylesheet" href="src/style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="bg-[#070a29] lightMode zendots">
     <!----------------------------------------- nav -------------------------------->
@@ -109,7 +113,7 @@
     <!--------------------------------- mobile menu -------------------------------->
     <section
       id="mobMenu"
-      class="w-full h-fit fix bg-[#131313ab] absolute top-0 right-full duration-700"
+      class="w-full h-fit fix lg:hidden bg-[#131313ab] absolute top-0 right-full duration-300"
     >
       <!-- close button -->
       <div id="closebtn" class="absolute right-4 top-6">
@@ -117,7 +121,11 @@
           class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500"
         >
           <figure class="w-[80%] h-[80%]">
-            <img class="w-full h-full" src="src/images/close.png" alt="" />
+            <img
+              class="w-full h-full hover:rotate-180 duration-500"
+              src="src/images/close.png"
+              alt=""
+            />
           </figure>
         </div>
       </div>
@@ -198,6 +206,236 @@
         </ul>
       </div>
     </section>
+    <!---------------------------------- main ----------------------------------->
+    <main class="w-full 2xl:container 2xl:mx-auto">
+      <!-- row first -->
+      <div class="w-full flex flex-wrap justify-around">
+        <!-- left side -->
+        <div class="w-full md:w-[45%] px-4 py-8">
+          <h1
+            class="text-4xl md:text-[45px] lg:text-6xl lg:mt-20 lg:leading-20 md:w-[100%] w-[80%]"
+          >
+            Collect Next Generation
+            <span class="text-[#b392ff]">NFTs</span>
+            <br class="hidden lg:flex" />
+            Today
+          </h1>
+          <p class="mb-4 md:mb-9 lg:mb-12 lg:mt-10 readex">
+            Cyfonii is the premier marketplace for nifties, which are digital
+            items you can truly own for yourself
+          </p>
+          <!-- button -->
+          <div
+            class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e]"
+          >
+            <div class="btnFav">Get Conected</div>
+          </div>
+          <!-- txt -->
+          <h5 class="text-[15px] mt-6 lg:mt-16 mb-3">We are Monteno NFT</h5>
+          <div class="lg:flex gap-6 items-center">
+            <h2 class="readex text-[14px] text-[#52546a]">We accept:</h2>
+            <!-- icons -->
+            <div class="flex gap-3 mt-4 lg:mt-0">
+              <i
+                class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+              <i
+                class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+              <i
+                class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+              <i
+                class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+              <i
+                class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+              <i
+                class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div
+          class="w-full relative overflow-hidden py-20 md:w-[45%] px-2 md:py-5"
+        >
+          <!-- under image -->
+          <figure
+            class="absolute md:-top-8 top-5 md:h md:right-0 right-5 z-40 rotate-[25deg] w-full h-full"
+          >
+            <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
+          </figure>
+          <!-- image -->
+          <figure class="w-full h-full">
+            <img
+              class="w-[95%] mx-auto relative z-50 object-cover"
+              src="src/images/img1.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+      <!------------------------- row second ------------------>
+      <div class="w-full flex flex-wrap justify-around overflow-hidden">
+        <!-- left side -->
+        <div class="w-full relative py-20 md:w-[45%]">
+          <!-- under image -->
+          <figure
+            class="absolute top-10 md:h left-[65%] -translate-x-1/2 z-20 rotate-[2deg] w-full h-full"
+          >
+            <img class="w-[70%]" src="src/images/bgimage2.png" alt="" />
+          </figure>
+          <!-- image -->
+          <figure class="w-full h-full relative z-30">
+            <img
+              class="w-[65%] lg:w-[80%] mx-auto relative z-30 object-cover duration-300 hover:-translate-y-3"
+              src="src/images/img2.png"
+              alt=""
+            />
+          </figure>
+          <!-- on image -->
+          <figure
+            class="absolute hidden lg:flex bottom-10 md:h left-[35%] rounded-4xl overflow-hidden -translate-x-1/2 z-50 w-[65%] h-[55%] duration-300 hover:-translate-y-3"
+          >
+            <img
+              class="w-[100%] h-[100%] object-cover"
+              src="src/images/img3.jpg"
+              alt=""
+            />
+          </figure>
+          <!-- on image 2 -->
+          <figure
+            class="absolute hidden lg:flex bottom-0 md:h left-[75%] rounded-4xl overflow-hidden -translate-x-1/2 z-[40] w-[40%] h-[30%] duration-300 hover:-translate-y-3"
+          >
+            <img
+              class="w-[100%] h-[100%] object-cover"
+              src="src/images/img4.png"
+              alt=""
+            />
+          </figure>
+        </div>
+        <!-- right side -->
+        <div class="w-full md:w-[50%] px-4 py-8 md:mt-14 lg:mt-20">
+          <button class="txtFav py-1.5 px-6 btnFav2 mb-4">About Us</button>
+          <h1 class="text-[28px] w-[95%] lg:text-[50px] lg:w-[70%]">
+            Hight Quality NFT Collections
+          </h1>
+          <p class="mt-3 text-[14px] readex">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+            tempor incididunt ut labore et
+          </p>
+          <p class="mt-10 md:mt-5 text-[14px] readex">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+          </p>
+          <!-- button -->
+          <div
+            class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e] mt-6"
+          >
+            <div class="btnFav">Get Conected</div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- Our Speciality ---------------------------->
+      <section class="mt-12">
+        <!-- top -->
+        <div class="w-full">
+          <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
+          <h2
+            class="text-[28px] md:mt-6 w-[90%] md:w-[60%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2"
+          >
+            Complete Solutions for your NFT
+          </h2>
+          <p
+            class="text-center md:w-[60%] lg:w-[40%] md:mt-6 readex text-[14px] mt-2 mx-auto"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+            tempor incididunt ut labore et
+          </p>
+        </div>
+        <!-- bottom section -->
+        <section
+          class="w-full pt-[90px] flex flex-wrap justify-center md:justify-around gap-30 items-center md:gap-0 md:pt-[150px] md:gap-y-36 mb-32"
+        >
+          <!-- 01 -->
+          <div class="w-[95%] md:w-[47%] lg:w-[23%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
+            >
+              <figure class="w-[56px] h-[56px]">
+                <img class="w-full h-full" src="src/images/icon1.png" alt="" />
+              </figure>
+            </div>
+            <h4 class="flex justify-center">Huge Collection</h4>
+            <p class="w-full flex justify-center readex text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+              01
+            </h2>
+          </div>
+          <!-- 02 -->
+          <div class="w-[95%] md:w-[47%] lg:w-[23%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
+            >
+              <figure class="w-[56px] h-[56px]">
+                <img class="w-full h-full" src="src/images/icon2.png" alt="" />
+              </figure>
+            </div>
+            <h4 class="flex justify-center">High Quality</h4>
+            <p class="w-full flex justify-center readex text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+              02
+            </h2>
+          </div>
+          <!-- 03 -->
+          <div class="w-[95%] md:w-[47%] lg:w-[23%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
+            >
+              <figure class="w-[56px] h-[56px]">
+                <img class="w-full h-full" src="src/images/icon3.png" alt="" />
+              </figure>
+            </div>
+            <h4 class="flex justify-center">Top Resource</h4>
+            <p class="w-full flex justify-center readex text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+              03
+            </h2>
+          </div>
+          <!-- 04 -->
+          <div class="w-[95%] md:w-[47%] lg:w-[23%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
+            >
+              <figure class="w-[56px] h-[56px]">
+                <img class="w-full h-full" src="src/images/icon4.png" alt="" />
+              </figure>
+            </div>
+            <h4 class="flex justify-center">Big Community</h4>
+            <p class="w-full flex justify-center readex text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </p>
+            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+              04
+            </h2>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
   <script src="src/js/master.js"></script>
 </html>
