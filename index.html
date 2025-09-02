@@ -209,9 +209,9 @@
     <!---------------------------------- main ----------------------------------->
     <main class="w-full 2xl:container 2xl:mx-auto">
       <!-- row first -->
-      <div class="w-full flex flex-wrap">
+      <div class="w-full flex flex-wrap justify-around">
         <!-- left side -->
-        <div class="w-full md:w-[50%] px-4 py-8">
+        <div class="w-full md:w-[45%] px-4 py-8">
           <h1
             class="text-4xl md:text-[45px] lg:text-6xl lg:mt-20 lg:leading-20 md:w-[100%] w-[80%]"
           >
@@ -259,13 +259,13 @@
         </div>
         <!-- right side -->
         <div
-          class="w-full relative overflow-hidden py-20 md:w-[50%] px-2 md:py-5"
+          class="w-full relative overflow-hidden py-20 md:w-[45%] px-2 md:py-5"
         >
           <!-- under image -->
           <figure
-            class="absolute -top-1 right-3 z-40 rotate-[25deg] w-full h-full"
+            class="absolute -top-1 md:h right-3 z-40 rotate-[25deg] w-full h-full"
           >
-            <img class="w-[190%] h-full" src="src/images/bgimage.png" alt="" />
+            <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
           </figure>
           <!-- image -->
           <figure class="w-full h-full">
@@ -277,6 +277,74 @@
           </figure>
         </div>
       </div>
+      <!------------------------- row second ------------------>
+      <div class="w-full flex flex-wrap justify-around">
+        <!-- left side -->
+        <div class="w-full relative py-20 md:w-[45%]">
+          <!-- under image -->
+          <figure
+            class="absolute top-10 md:h left-[65%] -translate-x-1/2 z-20 rotate-[2deg] w-full h-full"
+          >
+            <img class="w-[70%]" src="src/images/bgimage2.png" alt="" />
+          </figure>
+          <!-- image -->
+          <figure class="w-full h-full relative z-30">
+            <img
+              class="w-[65%] lg:w-[80%] mx-auto relative z-30 object-cover duration-300 hover:-translate-y-3"
+              src="src/images/img2.png"
+              alt=""
+            />
+          </figure>
+          <!-- on image -->
+          <figure
+            class="absolute hidden lg:flex bottom-10 md:h left-[35%] rounded-4xl overflow-hidden -translate-x-1/2 z-50 w-[65%] h-[55%] duration-300 hover:-translate-y-3"
+          >
+            <img
+              class="w-[100%] h-[100%] object-cover"
+              src="src/images/img3.jpg"
+              alt=""
+            />
+          </figure>
+          <!-- on image 2 -->
+          <figure
+            class="absolute hidden lg:flex bottom-0 md:h left-[75%] rounded-4xl overflow-hidden -translate-x-1/2 z-[40] w-[40%] h-[30%] duration-300 hover:-translate-y-3"
+          >
+            <img
+              class="w-[100%] h-[100%] object-cover"
+              src="src/images/img4.png"
+              alt=""
+            />
+          </figure>
+        </div>
+        <!-- right side -->
+        <div class="w-full md:w-[50%] px-4 py-8 md:mt-14 lg:mt-20">
+          <button
+            class="txtFav py-1.5 px-6 bg-[#141634] rounded-4xl border border-[#dadada1e] mb-4"
+          >
+            About Us
+          </button>
+          <h1 class="text-[28px] w-[95%] lg:text-[50px] lg:w-[70%]">
+            Hight Quality NFT Collections
+          </h1>
+          <p class="mt-3 text-[14px] readex">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+            tempor incididunt ut labore et
+          </p>
+          <p class="mt-10 md:mt-5 text-[14px] readex">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+          </p>
+          <!-- button -->
+          <div
+            class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e] mt-6"
+          >
+            <div class="btnFav">Get Conected</div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- Our Speciality ---------------------------->
     </main>
   </body>
   <script src="src/js/master.js"></script>
